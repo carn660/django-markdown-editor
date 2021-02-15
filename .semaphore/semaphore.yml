@@ -10,6 +10,7 @@ blocks:
       jobs:
         - name: Build
           commands:
+            - checkout
             - sem-version python 3.7
             - mkdir .pip_cache
             - cache restore
